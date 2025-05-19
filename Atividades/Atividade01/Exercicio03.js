@@ -1,4 +1,5 @@
-let nota = 7;
+const input3 = require('prompt-sync')();
+let nota = input3("Informe a nota: ");
 
 function Avaliar(nota){
     if(nota < 0 || nota > 10){

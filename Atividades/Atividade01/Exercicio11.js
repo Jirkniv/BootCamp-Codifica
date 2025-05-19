@@ -7,4 +7,4 @@ for(let i = 0; i != 5; i++){
     num11 = Number(num11)
     res = num11 + res
 }
- console.log(res);
+ console.log("Soma total: "+ res);

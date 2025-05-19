@@ -1,4 +1,5 @@
-let idade = 10;
+const input2 = require('prompt-sync')();
+let idade = input2("Informe a idade: ");
 
 function Age(idade){
 if(idade <= 12){

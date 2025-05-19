@@ -1,4 +1,5 @@
-let num = 6;
+const input1 = require('prompt-sync')();
+let num = input1("Informe o numero: ");
 function parImpar(num) {
 
 
