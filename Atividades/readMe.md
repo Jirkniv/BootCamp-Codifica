@@ -42,5 +42,7 @@ cd Atividades/Atividade01
 
 ```sh
 node Exercicio01.ts
+
+node Secao1.js
 ```
 
