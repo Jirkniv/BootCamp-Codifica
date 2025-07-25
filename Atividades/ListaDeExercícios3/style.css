@@ -1,0 +1,161 @@
+body{
+    background-color: #fff;
+}
+
+.cabecalho{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+.titulo{
+    font-size: 40px;
+    color: #0063F7;
+    border-bottom: 1px solid #0063F7;
+}
+.text{
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+}
+#special{
+    font-weight: bold;
+    border-top: 5px solid #0063F7;
+}
+.subTitilo{
+    font-size: 20px;
+    color: #0063F7;
+    text-decoration: underline;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rodape{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.rodape > .text{
+    color: #1919F7;
+}
+/* Galeria */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 80%;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Media query para ajustar o grid em telas menores */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+/* Menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para o menu hamburger */
+.menu-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Oculta a navegação padrão em telas menores */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Ajuste conforme necessário */
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+}
